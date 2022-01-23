@@ -7,6 +7,7 @@ pipeline{
              echo "bui;ldingdjf"
              
         }
+        }
         stage("deploy"){
             steps{
                 echo "deploying the application dg"
