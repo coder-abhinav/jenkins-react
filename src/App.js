@@ -22,7 +22,7 @@ function App() {
  async function incrementQuantity(index){
     let newProductList =  [...products];
     
-    if(!!newProductList[index]){
+    if(!!newProduct List[index]){
      
    newProductList[index].quantity=4;
     console.log(newProductList,"index")
