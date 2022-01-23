@@ -2,6 +2,7 @@ pipeline{
     agent any
    
     environment {
+        SERVER_CRE =credentials('sandeepa1234')
     }
     stages{
         stage("build"){
@@ -12,16 +13,9 @@ pipeline{
         stage("deploy"){
             steps{
                 echo "deploying the application dg"
-                echo "deploying with antyhtoj"
+                echo "deploying with ${SERVER_CRE}"
             }
         }
-        post{
-            always{
-
-            }
-            success{
-
-            }
-        }
+       
     }
 }
