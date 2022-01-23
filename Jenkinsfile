@@ -2,7 +2,7 @@ pipeline{
     agent any
    
     environment {
-        SERVER_CRE =credentials('sandeepa singh')
+        SERVER_CRE =credentials('sandeepa1234')
     }
     stages{
         stage("build"){
